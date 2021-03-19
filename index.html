@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>SELF COVID ASSESSMENT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https:maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https:ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https:maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https:fonts.gstatic.com">
+    <link href="https:fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https:fonts.gstatic.com">
+    <link href="https:fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+        <h1 class="header">
+            <hr>
+            SELF COVID ASSESSMENT
+            <sup>
+                <img id="logo" src="logo.gif.gif">
+            </sup>
+            <hr>
+        </h1>
+    </center>
+    <center>
+        <div class=" main_div">
+            <div class="form-group">
+                <div class="img_style">
+                    ==========<img id="img_style" src="FILL OUT THE.png" style="margin-top: 5px;">========
+                </div>
+                <hr>
+                <img id="bullets">
+                <h3 id="h3">AGE</h3>
+                <hr>
+                <p>Please Select Your Age Group: </p>
+                <h3 style="margin-left: 1200px">MARKS ↓</h3>
+                <div class="radio-toolbar">
+                    <input type="radio" id="radio_below_20" name="radioAge" value="1" onclick="score_age_1();">
+                    <label for="radio_below_20"> Below 20
+                        <hr> (1)</label>
+
+                    <input type="radio" id="radio21-40" name="radioAge" value="2" onclick="score_age_2();">
+                    <label for="radio21-40">21-40
+                        <hr> (2)</label>
+
+                    <input type="radio" id="radio41-60" name="radioAge" value="3" onclick="score_age_3();">
+                    <label for="radio41-60">41-59
+                        <hr> (3)</label>
+
+                    <input type="radio" id="radio60-plus" name="radioAge" value="4" onclick="score_age_4();">
+                    <label for="radio60-plus">60 And Above
+                        <hr> (4)</label>
+
+                    <input type="radio" id="radio60-comorbid" name="radioAge" value="5" onclick="score_age_5();">
+                    <label for="radio60-comorbid">60 And Above With Comorbid Conditions*
+                        <hr> (5)</label>
+                </div>
+                <h5 class="left down">*Comorbid Conditions - Diabetes / Heart Diseases / Kidney Disease...etc.</h5>
+            </div>
+        </div>
+        <div class="main_div">
+            <div class="form-group">
+                <hr>
+                <img id="bullets">
+                <h3 id="h3">SYMPTOMS</h3>
+                <hr>
+                <div class="radio-toolbar">
+                    <input type="radio" id="symptom1" name="radioSymptoms" value="1" onclick="score_symptom_1()">
+                    <label for="symptom1">Sore Throat / Sneezing / Runny Nose (All or any one)
+                        <hr> (1)</label>
+
+                    <input type="radio" id="symptom2" name="radioSymptoms" value="2" onclick="score_symptom_2()">
+                    <label for="symptom2">Sore Throat / Sneezing / Runny Nose (All or any two) + Mild Fever
+                        <hr> (2)</label>
+
+                    <input type="radio" id="symptom3" name="radioSymptoms" value="3" onclick="score_symptom_3()">
+                    <label for="symptom3">Sore Throat / Sneezing / Runny Nose (Any Of These) + Fever More Than 1 Episode
+                        and Bodyache
+                        <hr> (3)</label>
+
+                    <input type="radio" id="symptom4" name="radioSymptoms" value="4" onclick="score_symptom_4()">
+                    <label for="symptom4">Sore Throat / Sneezing / Runny Nose (Any Of These) + Fever / Bodyache / Cough
+                        <hr> (4)</label>
+
+                    <input type="radio" id="symptom5" name="radioSymptoms" value="5" onclick="score_symptom_5()">
+                    <label for="symptom5">Sore Throat / Sneezing / Runny Nose (Any Of These) + Fever / Bodyache /
+                        Headache + Breathlessness
+                        <hr> (5)</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 main_div">
+            <div class="form-group">
+                <hr>
+                <img id="bullets">
+                <h2 class="h3_custom">TRAVELLING </h2>
+                <h5>(DOMESTIC/INTERNATIONAL)</h5>
+                <h4 id="and_or">AND/OR</h4>
+                <h2>SOCIAL GATHERING SINCE LAST 15-20 DAYS</h2>
+                <hr>
+                <div class="radio-toolbar custom-toolbar">
+                    <input type="radio" id="travel_no" name="radioTravel" value="0" onclick="score_travelling_0()">
+                    <label for="travel_no">No
+                        <hr> (0)</label>
+
+                    <input type="radio" id="travel_yes" name="radioTravel" value="5" onclick="score_travelling_5()">
+                    <label for="travel_yes">Yes
+                        <hr> (5)</label>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 main_div">
+            <div class="form-group">
+                <hr>
+                <img id="bullets">
+                <h3 id="h3">Contact With Covid Positive Case</h3>
+                <hr>
+                <div class="radio-toolbar">
+                    <input type="radio" id="no_contact" name="radioContacts" value="0" onclick="score_contact_0()">
+                    <label for="no_contact">No Contact
+                        <hr> (0)</label>
+
+                    <input type="radio" id="short_contact" name="radioContacts" value="2" onclick="score_contact_2()">
+                    <label for="short_contact">Short Term Contact (For eg. Office Colleague, Commuting etc.)
+                        <hr> (2)</label>
+
+                    <input type="radio" id="with_contact" name="radioContacts" value="5" onclick="score_contact_5()">
+                    <label for="with_contact">If Yes, Staying Together (For eg. Family Member(s), Room Partner(s) etc.)
+                        <hr> (5)</label>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="div_span">
+            <div class="custom_div1" style="margin-bottom: 10px;">
+                <div class="form-group" style="padding: bottom 100px;">
+                    <h3 id="score"></h3>
+                    <hr id="hr" style="width: 25%;">
+                    <h3 id="twenty">20</h3>
+                    <button class="btn btn-success" id="btn_generate" style="margin-top: 15px;"
+                        onclick="display_result();">EVALUATE SCORE</button>
+                    <div style="margin-top: 25px;"><a class="btn btn-info"
+                            href="javascript:location.reload(true)">REFRESH
+                            THIS PAGE</a></div>
+                </div>
+            </div>
+            <div class="custom_div2" style="margin-bottom: 10px;">
+                <div class="form-group" style="padding: bottom 100px;">
+                    <div class="animate__animated animate__rubberBand animate__infinite animate__slower">
+                        <h1 id="results"></h1>
+                    </div>
+                    <h5 class="down_1">CHANCES OF COVID INFECTION</h5>
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

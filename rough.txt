@@ -1,0 +1,8 @@
+Sore Throat / Sneezing / Runny Nose / Mild Fever / Fever More Than 1 Episode / Bodyache / Breathlessness
+
+
+
+
+col-lg-4 col-md-6 col-sm-6 col-xs-11 col-s-1 main_div
+
+col-lg-4 col-md-6 col-sm-6 col-xs-11 custom_div"
